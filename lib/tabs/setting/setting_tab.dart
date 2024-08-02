@@ -22,11 +22,11 @@ class settingTab extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(AppLocalizations.of(context)!.darktheme,
-              style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.w600)),
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.w600)),
               Switch(value:settingsprovider.themeMode == ThemeMode.dark ,
-                  onChanged:(isDark) {
-                settingsprovider.changeTheme(isDark? ThemeMode.dark :ThemeMode.light);
-                  },
+                onChanged:(isDark) {
+                  settingsprovider.changeTheme(isDark? ThemeMode.dark :ThemeMode.light);
+                },
                 activeColor: AppTheme.gold,
                 inactiveThumbColor:Colors.grey,
 
